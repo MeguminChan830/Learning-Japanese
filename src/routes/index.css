@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Madimi One", sans-serif;
+}
+html {
+    height: 100%;
+}
+
+body {
+    background-image: linear-gradient(to bottom, rgb(233, 30, 255), rgb(0, 255, 0));
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+}
+#start{
+    display: block;
+    border:10px dotted #ff6565;
+    background: pink;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 2em;
+    padding: 10px;
+    border-radius: 10px;
+}
+.prac{
+    position: absolute;
+    top: 80px;
+    background-color: rgb(158, 77, 234);
+    padding-top: 0px;
+    width: 90vw;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0 0 20px #333;
+}
+.index{
+    display: block;
+    position: relative;
+    margin-bottom: 100px;
+    /* text-align: center; */
+    color: #c1005a;
+    background-color: gold;
+    border-radius: 20px 20px 0 0;
+    height: 40px;
+}
+.index h1{
+    position: absolute;
+    display: inline-block;
+    background-color: #ffaf0f;
+    bottom: 13px;
+    padding:0px 18px 0px 18px;
+    left:46vw;
+    transform: translateX(-50%);
+    border-radius: 23px 23px 0 0;
+    border-style: solid;
+    border-color: aqua;
+    border-width: 8px;
+    font-size: 2.5em;
+}
+.word, .check, .choose{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.word div{
+    margin-top: -50px;
+    border-radius: 10px;
+    border: 6px dashed rgb(253, 162, 177);
+    background: greenyellow;
+
+    font-size: 2.5em;
+    padding: 10px;
+}
+.check button{
+    margin-top: 40px;
+    font-size: 2.8em;
+    padding: 10px 60px 4px 60px;
+    border:10px double;
+    border-radius: 30px;
+    margin-bottom: 20px;
+
+}
+.check button:nth-child(1){
+    border-color: rgb(255, 32, 32);
+    background: #ff9999;
+    color: rgb(255, 0, 0)
+}
+
+.check button:nth-child(2){
+    border-color: green;
+    background: #56ff23;
+    color:green ;
+}
+.kanji{
+    text-align: center;
+    background-color:#fbff7f ;
+    font-size: 2.5em;
+}
+.choose button{
+    font-size: 3em;
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-style: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.choose button:nth-child(1){
+    background: #ff9d00;
+}
+.choose button:nth-child(2){
+    background: rgb(255, 121, 143);
+}
+
+.correct{
+    color: green;
+}
+.wrong{
+    color: black;
+}
+.active{
+    animation: ani 200ms;
+
+}
+@keyframes ani{
+    0%, 100%{
+        transform: rotate(0deg) scale(1);
+
+    }
+    30%{
+        transform:rotate(10deg) scale(1.1);
+    }
+    50%{
+        transform:rotate(-10deg) scale(1.2);
+    }
+    70%{
+        transform: rotate(-10deg) scale(1.1);
+    }
+}
+#start{
+    transition: 400ms;
+    box-shadow: 0 0 0 rgb(255, 0, 139);
+    position: relative;
+}
+#start:hover{
+    transform: translate(-20px, -20px);
+    box-shadow: 20px 20px 0 rgb(255, 0, 139);
+}
+#start i:nth-child(2){
+    position: absolute;
+    top:81px;
+    left:-19px;
+    border:10px solid rgb(255, 0, 139);
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    transform-origin: 100% 0;
+    transform: scale(0);
+    transition: 400ms;
+
+}
+#start:hover i:nth-child(2){
+    transform: scale(1) translateX(14px);
+
+}
+
+#start i:nth-child(3){
+    position: absolute;
+    top:-20px;
+    left:405px;
+    border:10px solid rgb(255, 0, 139);
+    border-right-color: transparent;
+    border-top-color: transparent;
+    transform-origin: 0 100%;
+    transform: scale(0);
+    transition: 400ms;
+
+}
+
+#start:hover i:nth-child(3){
+    transform: scale(1) translateY(15px);
+}
+/* #start: */
+/* @keyframes box{
+    0%{
+        transform: translate(0,0);
+    }
+    100%{
+        
+    }
+} */
